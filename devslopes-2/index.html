@@ -3,33 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CSS Website</title>
+    <title>Responsive Navigation Menu</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="menu">
-        <ul class="main-menu">
-          <div class="home">
-            <li><a href="#home">Home</a></li>
-          </div>
-          <div class="left">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </div>
-          <div class="right">
-            <li><a href="#signup">Sign Up</a></li>
-            <li><a href="#signin">Sign In</a></li>
-          </div>
-          <div class="trigram">
-            <li><a href="">&#9776;</a></li>
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="left">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link hidden-on-mobile">About</a>
+          <a href="#services" class="nav-link hidden-on-mobile">Services</a>
+          <a href="#contact" class="nav-link hidden-on-mobile">Contact</a>
+        </div>
+        <div class="right">
+          <a href="#blog" class="nav-link hidden-on-mobile">Blog</a>
+          <a href="#support" class="nav-link hidden-on-mobile">Support</a>
+        </div>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
   </body>
 </html>
