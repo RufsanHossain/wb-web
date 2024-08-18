@@ -7,26 +7,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-left">
-        <div class="left">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link hidden-on-mobile">About</a>
-          <a href="#services" class="nav-link hidden-on-mobile">Services</a>
-          <a href="#contact" class="nav-link hidden-on-mobile">Contact</a>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">
+          <div class="left">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link hidden-on-mobile">About</a>
+            <a href="#services" class="nav-link hidden-on-mobile">Services</a>
+            <a href="#contact" class="nav-link hidden-on-mobile">Contact</a>
+          </div>
+          <div class="right">
+            <a href="#blog" class="nav-link hidden-on-mobile">Blog</a>
+            <a href="#support" class="nav-link hidden-on-mobile">Support</a>
+          </div>
         </div>
-        <div class="right">
-          <a href="#blog" class="nav-link hidden-on-mobile">Blog</a>
-          <a href="#support" class="nav-link hidden-on-mobile">Support</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-      </div>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
+    <main>
+      <section class="container" id="form-section">
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <h1 class="larger">Crazy Radness</h1>
+              <h2 class="larger">Made for Developers</h2>
+            </div>
+          </div>
+          <div class="col-6"></div>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
